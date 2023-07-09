@@ -1,6 +1,3 @@
-CarCost.java:
-// ----------------------------------------------------
-
 import java.util.Scanner;
 public class CarCost extends Additional_Taxes{
 	int carPrice;
@@ -70,42 +67,6 @@ public class CarCost extends Additional_Taxes{
 			total = carPrice + rto_tax + tcs_tax;
 		}
 		System.out.println("Total cost " + total);
-	}
-}
-
-
-Additional_Taxes.java:
-// -----------------------------------------------
-public class Additional_Taxes {
-	private int rtocharges = 113990;
-	private int tcscharges = 11000;
-	public int getRtocharges() {
-		return rtocharges;
-	}
-	public int getTcscharges() {
-		return tcscharges;
-	}
-}
-
-Car.java:
-// ------------------------------------------------
-
-import java.util.*;
-import java.io.*;
-public class Car {
-	public static void main(String[] args) {
-		int carCost;
-		Scanner sc  = new Scanner(System.in);
-		System.out.print("Select car model: ");
-		String carName = sc.nextLine();
-		CarCost ccost = new CarCost(); 
-		ccost.findCostOfCar(carName);
-		System.out.print("Do you need Insurance: ");
-		String insuranceCheck = sc.next();
-		System.out.print("Do you need Additional Accessories: ");
-		String accessoriesCheck = sc.next();
-		ccost.discountCheck(insuranceCheck,accessoriesCheck);
-		ccost.total(insuranceCheck,accessoriesCheck);
 	}
 }
 
