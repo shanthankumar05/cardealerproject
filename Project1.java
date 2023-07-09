@@ -1,5 +1,5 @@
 CarCost.java:
-----------------------------------------------------
+// ----------------------------------------------------
 
 import java.util.Scanner;
 public class CarCost extends Additional_Taxes{
@@ -75,7 +75,7 @@ public class CarCost extends Additional_Taxes{
 
 
 Additional_Taxes.java:
------------------------------------------------
+// -----------------------------------------------
 public class Additional_Taxes {
 	private int rtocharges = 113990;
 	private int tcscharges = 11000;
@@ -88,7 +88,7 @@ public class Additional_Taxes {
 }
 
 Car.java:
-------------------------------------------------
+// ------------------------------------------------
 
 import java.util.*;
 import java.io.*;
@@ -111,24 +111,24 @@ public class Car {
 
 
 
-Testcases:
-------------------------
+// Testcases:
+// ------------------------
 
-Input 1:
-Select car model: Taigun Topline
-Do you need Insurance: yes
-Do you need Additional Accessories: yes
-Dealer discount: 20,000
+// Input 1:
+// Select car model: Taigun Topline
+// Do you need Insurance: yes
+// Do you need Additional Accessories: yes
+// Dealer discount: 20,000
 
-Output 1:
-Total cost 19,38,290 
+// Output 1:
+// Total cost 19,38,290 
 
------------------------
-Input 2:
-Select car model: Polo Trendline
-Do you need Insurance: no
-Do you need Additional Accessories: no
-Dealer discount: 0
+// -----------------------
+// Input 2:
+// Select car model: Polo Trendline
+// Do you need Insurance: no
+// Do you need Additional Accessories: no
+// Dealer discount: 0
 
-Output 2:
-Total cost 9,94,990
+// Output 2:
+// Total cost 9,94,990
